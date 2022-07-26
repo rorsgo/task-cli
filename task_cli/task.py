@@ -1,8 +1,15 @@
 import typer
+import utils.tools as tools
 
+a = {
+    'paullo': 16,
+    'Rodrigo': 21,
+}
 
-def main(name: str = typer.Argument((...))):
-    typer.echo(f"Hello {name}")
+def main():
+    b = {}
+    key = tools.extract_keys_and_values(a)
+    print(key)
 
 
 if __name__ == "__main__":
