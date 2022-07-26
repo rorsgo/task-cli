@@ -1,7 +1,7 @@
 import typer
 
 
-def main(name: str = typer.Argument((...))):
+def main(name: str = typer.Argument(' ')):
     typer.echo(f"Hello {name}")
 
 
